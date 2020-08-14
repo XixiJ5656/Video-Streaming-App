@@ -1,11 +1,13 @@
 import React from "react";
-
+import Row from "./components/Row";
 import "./App.css";
+import requests from "./fetchApi/apirequests";
 
 function App() {
   return (
     <div className="App">
-      <h1>HI</h1>
+      <Row title="Top Rated" apiUrl={requests.fetchTopRated} />
+      {/* <Row title="Trending Now" apiUrl={requests.fetchTrending} /> */}
     </div>
   );
 }
