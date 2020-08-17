@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
+import "../App.css";
 import LoginActionsCreator from "../actions/LoginActions";
 import { Redirect, Link } from "react-router-dom";
 
@@ -25,7 +26,7 @@ const LoginPage = (props) => {
     return <Redirect to="/homepage" />;
   } else {
     return (
-      <div>
+      <div className="loginpage">
         <form onSubmit={handleSubmit}>
           <h5>Log In Here</h5>
           <div>
@@ -45,7 +46,7 @@ const LoginPage = (props) => {
             <button>Log in</button>
           </div>
           <div>
-            {props.loginError ? (
+            {props.authError ? (
               <p>Log in failed, please double check your email and password</p>
             ) : null}
           </div>

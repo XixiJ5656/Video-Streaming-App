@@ -4,8 +4,6 @@ import "../App.css";
 import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
 
-const baseUrl = "https://image.tmdb.org/t/p/original/";
-
 const Row = (props) => {
   const { title, apiUrl } = props;
   const [movies, setMovies] = useState([]);
@@ -41,6 +39,8 @@ const Row = (props) => {
   };
 
   // const clearTrailer = () => !trailerUrl;
+
+  const baseUrl = "https://image.tmdb.org/t/p/original/";
   return (
     <div className="category-row">
       <h1>{title}</h1>

@@ -1,9 +1,28 @@
 .App {
   margin: 0;
-  background-color: rgb(228, 230, 213);
 }
-
-N .category-row {
+.loginpage {
+  display: block;
+  border: solid black;
+}
+.hompage {
+  background-color: rgb(241, 241, 237);
+  position: relative;
+}
+.top-section h1 {
+  color: white;
+  font-size: 15pt;
+  position: absolute;
+  border: solid-white;
+}
+.banner-play-button {
+  background-color: white;
+}
+.banner-show-details {
+  background-color: transparent;
+  color: white;
+}
+.category-row {
   font-size: 5pt;
   color: white;
 }
@@ -16,7 +35,7 @@ N .category-row {
 
 .movie {
   object-fit: cover;
-  max-width: 200px;
+  max-width: 230px;
   padding: 10px;
   cursor: pointer;
 }

@@ -1,16 +1,26 @@
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  width: 100vw;
+  position: fixed;
+  background-color: transparent;
+  z-index: 100;
+}
+.navbar-links {
+  display: flex;
 }
 .logo {
   margin: 20px;
+  color: rgb(214, 204, 54);
 }
 .authlinks {
   display: flex;
   justify-content: space-around;
-  font-size: 10pt;
+  font-size: 8pt;
   margin: 20px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
 }
 .authlinks NavLink {
   text-decoration: none;

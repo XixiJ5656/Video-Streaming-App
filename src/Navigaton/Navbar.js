@@ -8,7 +8,7 @@ import AfterAuth from "./AfterAuth";
 const Navbar = (props) => {
   const Navlinks = props.auth.uid ? <AfterAuth /> : <BeforeAuth />;
   return (
-    <nav>
+    <nav className="navbar">
       <Link to={props.auth.uid ? "/homepage" : "/"} className="logo">
         LOGO
       </Link>

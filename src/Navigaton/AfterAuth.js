@@ -7,11 +7,13 @@ import LogoutActionsCreator from "../actions/LogoutActions";
 const AfterAuth = (props) => {
   console.log(props);
   return (
-    <div className="authlinks">
-      <NavLink to="/accountpage">ICON</NavLink>
+    <div className="navbar-links">
+      <NavLink to="/accountpage" className="authlinks">
+        ICON
+      </NavLink>
 
-      <NavLink to="/" onClick={props.logout}>
-        Log Out
+      <NavLink to="/" onClick={props.logout} className="authlinks">
+        LOG OUT
       </NavLink>
     </div>
   );
