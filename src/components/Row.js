@@ -40,7 +40,7 @@ const Row = (props) => {
     }
   };
 
-  const clearTrailer = () => !trailerUrl;
+  // const clearTrailer = () => !trailerUrl;
   return (
     <div className="category-row">
       <h1>{title}</h1>
@@ -50,7 +50,7 @@ const Row = (props) => {
             className="movie"
             onClick={() => playTrailer(movie)}
             // onMouseLeave={() => clearTrailer()}
-            // key={movie.id}
+            key={movie.id}
             src={`${baseUrl}${movie.backdrop_path}`}
             alt="NOT FOUND"
           />

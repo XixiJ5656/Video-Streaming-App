@@ -1,22 +1,27 @@
 import React from "react";
-import Row from "./components/Row";
 import "./App.css";
-import Banner from "./components/Banner";
-// import Navbar from "./components/Navbar";
-import apiLists from "./fetchApi/apilists";
+import Navbar from "./Navigaton/Navbar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
+import HomePage from "./pages/HomePage";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      {/* <Navbar /> */}
-      <Banner />
-      <Row title="Top Rated" apiUrl={apiLists.topRated} />
-      <Row title="Trending Now" apiUrl={apiLists.trending} />
-      <Row title="Comedy Movies" apiUrl={apiLists.comedyMovies} />
-      <Row title="NETFLIX ORIGINAL" apiUrl={apiLists.netflixOriginals} />
-      <Row title="Romance Movies" apiUrl={apiLists.romanceMovies} />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <hr />
+        <Switch>
+          <Route path="/login" component={LoginPage} />
+          <Route path="/signup" component={SignupPage} />
+          <Route path="/homepage" component={HomePage} />
+          <Route exact path="/" component={LandingPage} />
+        </Switch>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

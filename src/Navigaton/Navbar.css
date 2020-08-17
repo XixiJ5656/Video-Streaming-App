@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.logo {
+  margin: 20px;
+}
+.authlinks {
+  display: flex;
+  justify-content: space-around;
+  font-size: 10pt;
+  margin: 20px;
+}
+.authlinks NavLink {
+  text-decoration: none;
+}

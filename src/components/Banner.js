@@ -18,7 +18,6 @@ const Banner = () => {
   }, []);
 
   //// try to use axios
-  console.log(movie);
   return (
     <div className="top-section">
       <h1>{movie?.title || movie?.original_title} </h1>
