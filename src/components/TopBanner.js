@@ -1,24 +1,39 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
 import axios from "axios";
-import apiLists from "../fetchApi/apilists";
+import { mixedApi } from "../Apilists";
 
 const TopBanner = () => {
   const [movie, setMovie] = useState({});
-
   useEffect(() => {
-    async function fetchData() {
-      const request = await axios.get(apiLists.netflixOriginals);
-      const randomIndex = Math.floor(
-        Math.random() * request.data.results.length
-      );
-      setMovie(request.data.results[randomIndex]);
-      return request;
-    }
-    fetchData();
+    axios
+      .get(mixedApi.netflixOriginals)
+      .then((response) => {
+        const randomIndex = Math.floor(
+          Math.random() * response.data.results.length
+        );
+        console.log(response.data.results[randomIndex]);
+        setMovie(response.data.results[randomIndex]);
+      })
+      .catch((error) => {
+        return error;
+      });
   }, []);
 
-  //// try to use axios
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const response = await axios.get(mixedApi.netflixOriginals);
+  //     const randomIndex = Math.floor(
+  //       Math.random() * response.data.results.length
+  //     );
+  //     console.log(response.data.results[randomIndex]);
+  //     setMovie(response.data.results[randomIndex]);
+  //     return response;
+  //   };
+  //   fetchData();
+  // }, []);
+
+  console.log(movie);
 
   return (
     <div

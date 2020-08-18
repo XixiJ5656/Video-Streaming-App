@@ -1,0 +1,23 @@
+.background-picture-singup {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("http://colourmenina.ca/wordpress/wp-content/uploads/2018/03/toptvshows.png");
+}
+.signup-container {
+  height: 100vh;
+  width: 100vw;
+  opacity: 95%;
+  background-image: linear-gradient(to top, rgb(27, 41, 82), rgb(94, 67, 27));
+  color: white;
+}
+.signup-form {
+  height: 50vh;
+  width: 25vw;
+  position: relative;
+  text-align: center;
+  padding-top: 200px;
+  display: block;
+  margin: auto;
+}

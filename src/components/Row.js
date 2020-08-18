@@ -8,15 +8,27 @@ const Row = (props) => {
   const { title, apiUrl } = props;
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
-
   useEffect(() => {
-    async function fetchData() {
-      const request = await axios.get(apiUrl);
-      setMovies(request.data.results);
-      return request;
-    }
-    fetchData();
+    axios
+      .get(apiUrl)
+      .then((response) => {
+        setMovies(response.data.results);
+      })
+      .catch((error) => {
+        return error;
+      });
   }, [apiUrl]);
+
+  //Another way to fetch data!
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const response = await axios.get(apiUrl);
+  //     setMovies(response.data.results);
+  //     return response;
+  //   };
+  //   fetchData();
+  // }, [apiUrl]);
 
   const opts = {
     height: "390",
@@ -53,7 +65,7 @@ const Row = (props) => {
             // onMouseLeave={() => clearTrailer()}
             key={movie.id}
             src={`${baseUrl}${movie.backdrop_path}`}
-            alt="NOT FOUND"
+            alt=""
           />
         ))}
       </div>

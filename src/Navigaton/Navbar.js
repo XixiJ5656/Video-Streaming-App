@@ -9,7 +9,7 @@ const Navbar = (props) => {
   const [navBackground, setNavBackground] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 120) {
         setNavBackground(true);
       } else setNavBackground(false);
     });

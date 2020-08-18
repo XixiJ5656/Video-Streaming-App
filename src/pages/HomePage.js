@@ -3,21 +3,19 @@ import Row from "../components/Row";
 import "./HomePage.css";
 import { connect } from "react-redux";
 import TopBanner from "../components/TopBanner";
-import apiLists from "../fetchApi/apilists";
+import { mixedApi } from "../Apilists";
 import { Redirect } from "react-router-dom";
 
 const HomePage = (props) => {
   if (!props.auth.uid) {
-    return <Redirect to="/login" />;
+    return <Redirect to="/" />;
   } else {
     return (
-      <div className="homepage">
+      <div className="content-display">
         <TopBanner />
-        <Row title="Top Rated" apiUrl={apiLists.topRated} />
-        <Row title="Trending Now" apiUrl={apiLists.trending} />
-        <Row title="Comedy Movies" apiUrl={apiLists.comedyMovies} />
-        <Row title="NETFLIX ORIGINAL" apiUrl={apiLists.netflixOriginals} />
-        <Row title="Romance Movies" apiUrl={apiLists.romanceMovies} />
+        <Row title="Trending Now" apiUrl={mixedApi.trending} />
+        <Row title="Top Rated" apiUrl={mixedApi.topRated} />
+        <Row title="NETFLIX ORIGINAL" apiUrl={mixedApi.netflixOriginals} />
       </div>
     );
   }
