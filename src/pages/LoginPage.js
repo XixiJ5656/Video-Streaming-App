@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import "./LoginPage.css";
 import { connect } from "react-redux";
-import "../App.css";
 import LoginActionsCreator from "../actions/LoginActions";
 import { Redirect, Link } from "react-router-dom";
 
@@ -21,39 +21,49 @@ const LoginPage = (props) => {
     const { email, password } = state;
     props.login(email, password);
   };
-
   if (props.auth.uid) {
     return <Redirect to="/homepage" />;
   } else {
     return (
-      <div className="loginpage">
-        <form onSubmit={handleSubmit}>
-          <h5>Log In Here</h5>
-          <div>
-            <label htmlFor="email">Email</label>
-            <input type="text" name="email" onChange={handleChange} />
-          </div>
-          <div>
-            <label htmlFor="password">Password</label>
+      <div className="login-container">
+        <form className="login-form" onSubmit={handleSubmit}>
+          <h5>LOG IN </h5>
+          <div className="form-group">
             <input
-              type="password"
-              name="password"
-              autoComplete="on"
+              className="form-control"
+              type="email"
+              name="email"
+              placeholder="Email"
               onChange={handleChange}
             />
           </div>
-          <div>
-            <button>Log in</button>
+          <div className="form-group">
+            <input
+              className="form-control "
+              type="password"
+              name="password"
+              autoComplete="on"
+              placeholder="Password"
+              onChange={handleChange}
+            />
           </div>
+          <br />
           <div>
-            {props.authError ? (
-              <p>Log in failed, please double check your email and password</p>
-            ) : null}
+            <button type="submit" className="btn btn-primary">
+              Log in
+            </button>
           </div>
+          <br />
+          <p>Don't have an account? </p>
+          <Link to="/signup" className="authbtn">
+            SIGN UP FREE
+          </Link>
         </form>
-        <p>
-          Don't have an account? <Link to="/signup">Sign Up</Link>
-        </p>
+        {/* <div>
+          {props.authError ? (
+            <p>Log in failed, please double check your email and password</p>
+          ) : null}
+        </div> */}
       </div>
     );
   }
@@ -61,8 +71,8 @@ const LoginPage = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    authError: state.auth.authError,
     auth: state.firebase.auth,
+    authError: state.auth.authError,
   };
 };
 

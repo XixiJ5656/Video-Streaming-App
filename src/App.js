@@ -12,7 +12,6 @@ const App = () => {
     <Router>
       <div className="App">
         <Navbar />
-
         <Switch>
           <Route path="/login" component={LoginPage} />
           <Route path="/signup" component={SignupPage} />

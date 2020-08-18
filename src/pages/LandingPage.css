@@ -1,0 +1,59 @@
+.background-picture {
+  position: absolute;
+  width: 100vw;
+  height: 90vh;
+  background-size: cover;
+  background-image: url("http://colourmenina.ca/wordpress/wp-content/uploads/2018/03/toptvshows.png");
+}
+.landing-page-top {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  text-align: center;
+  background: linear-gradient(120deg, #016111, #81026c, #0b028a, #946206);
+  opacity: 95%;
+  background-size: 1000% 1000%;
+  animation: rainbow 30s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+.center-piece {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  position: relative;
+  padding-top: 200px;
+}
+.center-piece h3 {
+  margin-bottom: 60px;
+  color: aliceblue;
+}
+.center-piece h6 {
+  color: lightgray;
+  font-size: 10pt;
+}
+.hulu-picture {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-image: url("https://www.hulu.com/static/hitch/s3/2020-07/Desktop-1600_Content-Grid%20%281%29.jpg?FgLCrmk7GKMLgGs0JJj2h1.qZDhBg8d5");
+}
+.free-trail {
+  color: balck;
+  font-weight: 700;
+  background-color: aliceblue;
+  border: solid aliceblue;
+  padding: 0.7em 2em;
+  text-decoration: none;
+  border-radius: 5px;
+}

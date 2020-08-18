@@ -1,8 +1,8 @@
 import React from "react";
 import Row from "../components/Row";
-import "../App.css";
+import "./HomePage.css";
 import { connect } from "react-redux";
-import HomeBanner from "../components/HomeBanner";
+import TopBanner from "../components/TopBanner";
 import apiLists from "../fetchApi/apilists";
 import { Redirect } from "react-router-dom";
 
@@ -11,8 +11,8 @@ const HomePage = (props) => {
     return <Redirect to="/login" />;
   } else {
     return (
-      <div className="hompage">
-        <HomeBanner />
+      <div className="homepage">
+        <TopBanner />
         <Row title="Top Rated" apiUrl={apiLists.topRated} />
         <Row title="Trending Now" apiUrl={apiLists.trending} />
         <Row title="Comedy Movies" apiUrl={apiLists.comedyMovies} />

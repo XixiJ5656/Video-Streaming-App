@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "../App.css";
+import "../pages/HomePage.css";
 import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
 
@@ -43,7 +43,8 @@ const Row = (props) => {
   const baseUrl = "https://image.tmdb.org/t/p/original/";
   return (
     <div className="category-row">
-      <h1>{title}</h1>
+      <h1 className="category-name">{title}</h1>
+      {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
       <div className="movies-list-row">
         {movies.map((movie) => (
           <img
@@ -56,7 +57,6 @@ const Row = (props) => {
           />
         ))}
       </div>
-      {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
     </div>
   );
 };

@@ -14,7 +14,7 @@ const SignupActionsCreator = (email, password) => async (dispatch) => {
       })
       .then(() => {
         firebase.auth().onAuthStateChanged(function (user) {
-          if (user.emailVerified()) {
+          if (user.emailVerified) {
             // Email is verified
             dispatch({
               type: SIGNUP_SUCCESS,

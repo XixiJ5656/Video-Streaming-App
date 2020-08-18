@@ -4,14 +4,14 @@ import { NavLink } from "react-router-dom";
 
 const BeforeAuth = () => {
   return (
-    <div className="navbar-links">
-      <NavLink className="authlinks" to="/login">
+    <div>
+      <NavLink className="before-authlink" to="/login">
         Log In
       </NavLink>
 
-      <NavLink className="authlinks" to="/signup">
+      {/* <NavLink className="authlinks" to="/signup">
         Sign Up
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 };

@@ -1,0 +1,46 @@
+.homepage {
+  background-color: rgb(19, 15, 15);
+  position: relative;
+}
+.top-section h1 {
+  color: white;
+  font-size: 10pt;
+  position: absolute;
+  border: solid-white;
+}
+.banner-play-button {
+  background-color: white;
+}
+.banner-show-details {
+  background-color: transparent;
+  color: white;
+}
+
+.category-name {
+  color: white;
+  font-size: 10pt;
+}
+.category-row {
+  font-size: 5pt;
+  color: white;
+  padding: 20px;
+}
+.movies-list-row {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  text-align: center;
+}
+
+.movie {
+  object-fit: cover;
+  max-width: 230px;
+  padding-left: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.movie:hover {
+  transform: scale(1.3);
+  transition: transform 0.3s;
+}

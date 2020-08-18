@@ -3,7 +3,7 @@ import "../App.css";
 import axios from "axios";
 import apiLists from "../fetchApi/apilists";
 
-const HomeBanner = () => {
+const TopBanner = () => {
   const [movie, setMovie] = useState({});
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const HomeBanner = () => {
     <div
       className="top-section"
       style={{
-        minHeight: "75vh",
+        minHeight: "70vh",
         backgroundPosition: "center,center",
         backgroundSize: "cover",
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
@@ -38,4 +38,4 @@ const HomeBanner = () => {
     </div>
   );
 };
-export default HomeBanner;
+export default TopBanner;
