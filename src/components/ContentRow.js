@@ -52,6 +52,7 @@ const Row = (props) => {
             key={movie.id}
             className="movie"
             onClick={() => playTrailer(movie)}
+            // onMouseEnter={() => playTrailer(movie)}
             src={`${baseUrl}${movie.backdrop_path}`}
             alt=""
           />

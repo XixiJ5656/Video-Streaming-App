@@ -25,7 +25,8 @@
 }
 .show-description {
   color: white;
-  font-size: 10pt;
+  font-size: 12pt;
+  font-weight: 500;
 }
 
 .banner-button {
@@ -37,11 +38,11 @@
 }
 .banner-play-button {
   border: none;
-  font-size: 10pt;
+  font-size: 12pt;
 }
 .banner-show-details {
   border: solid white;
-  font-size: 10pt;
+  font-size: 12pt;
 }
 .banner-play-button:hover {
   border: none;

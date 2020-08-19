@@ -8,11 +8,9 @@ const LoginActionsCreator = (email, password) => {
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then(() => {
-        console.log("Login SUCCESS");
         dispatch({ type: LOGIN_SUCCESS });
       })
       .catch(() => {
-        console.log("log in ERROR");
         dispatch({
           type: LOGIN_ERROR,
         });

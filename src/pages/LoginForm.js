@@ -61,18 +61,21 @@ const LoginForm = (props) => {
               >
                 Log in
               </button>
+              {/* <div>
+                {!props.auth.uid ? (
+                  <p>
+                    Log in failed, please double check your email and password.
+                  </p>
+                ) : null}
+              </div> */}
             </div>
+            <br />
             <br />
             <p>Don't have an account? </p>
             <Link to="/signup" className="authbtn">
               SIGN UP FREE
             </Link>
           </form>
-          {/* <div>
-          {props.authError ? (
-            <p>Log in failed, please double check your email and password</p>
-          ) : null}
-        </div> */}
         </div>
       </div>
     );
