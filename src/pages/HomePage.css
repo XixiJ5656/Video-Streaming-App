@@ -1,5 +1,5 @@
 .content-display {
-  background-color: rgb(19, 15, 15);
+  background-color: rgb(36, 23, 2);
   position: relative;
 }
 .banner-play-button {
@@ -11,8 +11,9 @@
 }
 .category-name {
   color: white;
-  font-size: 12pt;
-  margin-left: 30px;
+  font-size: 15pt;
+  text-align: left;
+  margin: 20px;
 }
 .category-row {
   color: white;
@@ -26,7 +27,7 @@
 }
 .movie {
   object-fit: cover;
-  max-width: 250px;
+  max-width: 300px;
   margin: 30px 5px;
   cursor: pointer;
   transition: transform 0.3s;

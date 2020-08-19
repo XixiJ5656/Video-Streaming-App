@@ -23,7 +23,7 @@ const TopBanner = () => {
   }, []);
 
   const opts = {
-    height: "390",
+    height: "450",
     width: "100%",
     playerVars: {
       autoplay: 1,

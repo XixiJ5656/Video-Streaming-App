@@ -10,7 +10,7 @@
   width: 100vw;
   height: 90vh;
   text-align: center;
-  background: linear-gradient(120deg, #016111, #4e0a43, #211d5a, #5c3e02);
+  background: linear-gradient(120deg, #023f0c, #3b0132, #050136, #694702);
   opacity: 98%;
   background-size: 1000% 1000%;
   animation: rainbow 30s linear infinite;
@@ -73,14 +73,14 @@
   width: 100vw;
   background-size: cover;
 
-  background-color: rgb(11, 25, 39);
+  background-color: rgb(35, 33, 63);
 }
 
 .bottom-picture {
   height: 90vh;
   width: 100vw;
   margin: auto;
-  opacity: 30%;
+  opacity: 50%;
   padding-top: 5vh;
   background-size: cover;
   overflow: hidden;

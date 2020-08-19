@@ -15,16 +15,16 @@ const MovieSection = (props) => {
         <TopBanner />
         <ContentRow title="Action" apiUrl={moviesApi.action} />
         <ContentRow title="Comedy" apiUrl={moviesApi.comedy} />
-        <ContentRow title="Romance" apiUrl={moviesApi.romance} />
         <ContentRow title="Fantasy" apiUrl={moviesApi.fantasy} />
         <ContentRow title="Crime" apiUrl={moviesApi.crime} />
         <ContentRow title="Adventure" apiUrl={moviesApi.adventure} />
-        <ContentRow title="Documentaries" apiUrl={moviesApi.documentary} />
-        <ContentRow title="Drama" apiUrl={moviesApi.drama} />
         <ContentRow title="Animation" apiUrl={moviesApi.animation} />
-        <ContentRow title="Family" apiUrl={moviesApi.family} />
         <ContentRow title="History" apiUrl={moviesApi.history} />
         <ContentRow title="Science Fiction" apiUrl={moviesApi.sifi} />
+        <ContentRow title="Documentaries" apiUrl={moviesApi.documentary} />
+        <ContentRow title="Family" apiUrl={moviesApi.family} />
+        <ContentRow title="Drama" apiUrl={moviesApi.drama} />
+        <ContentRow title="Romance" apiUrl={moviesApi.romance} />
         <ContentRow title="TV Movie" apiUrl={moviesApi.tvMovie} />
       </div>
     );

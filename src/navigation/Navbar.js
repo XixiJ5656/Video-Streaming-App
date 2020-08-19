@@ -28,7 +28,7 @@ const Navbar = (props) => {
       }}
     >
       <Link to={props.auth.uid ? "/homepage" : "/"} className="logo">
-        <img src={logo} height="30vmin" alt="logo" />
+        <img src={logo} height="40vmin" alt="logo" />
       </Link>
       {Navlinks}
     </nav>
