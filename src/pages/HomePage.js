@@ -1,5 +1,5 @@
 import React from "react";
-import Row from "../components/Row";
+import ContentRow from "../components/ContentRow";
 import "./HomePage.css";
 import { connect } from "react-redux";
 import TopBanner from "../components/TopBanner";
@@ -13,9 +13,10 @@ const HomePage = (props) => {
     return (
       <div className="content-display">
         <TopBanner />
-        <Row title="Trending Now" apiUrl={mixedApi.trending} />
-        <Row title="Top Rated" apiUrl={mixedApi.topRated} />
-        <Row title="NETFLIX ORIGINAL" apiUrl={mixedApi.netflixOriginals} />
+        <ContentRow title="Trending Movies" apiUrl={mixedApi.trendingMovie} />
+        <ContentRow title="Trending TV Shows" apiUrl={mixedApi.trendingTv} />
+        <ContentRow title="Popular" apiUrl={mixedApi.netflix} />
+        <ContentRow title="TV On Air" apiUrl={mixedApi.tvOnAir} />
       </div>
     );
   }

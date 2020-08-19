@@ -1,9 +1,11 @@
 const API_KEY = "aea147c3ec4189590c395399f899ea30";
 
 export const mixedApi = {
-  trending: `http://api.themoviedb.org/3/trending/all/week?api_key=${API_KEY}&language=en-US`,
-  netflixOriginals: `http://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&with_networks=213`,
-  topRated: `http://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&language=en-US,`,
+  trendingMovie: `http://api.themoviedb.org/3/trending/movie/day?api_key=${API_KEY}&language=en-US`,
+  trendingTv: `http://api.themoviedb.org/3/trending/tv/day?api_key=${API_KEY}&language=en-US`,
+  popular: `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1`,
+  tvOnAir: `https://api.themoviedb.org/3/tv/on_the_air?api_key=${API_KEY}&language=en-US&page=1 `,
+  netflix: `http://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&with_networks=213`,
 };
 
 export const moviesApi = {

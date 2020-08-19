@@ -16,12 +16,12 @@ const AfterAuth = (props) => {
           Movies
         </NavLink>
         <NavLink to="/tvshows" className="content-links">
-          Tv Shows
+          TV Shows
         </NavLink>
       </div>
       <div className="auth-nav">
         <NavLink to="/accountpage" className="after-authlink">
-          ICON
+          XJ
         </NavLink>
         <NavLink to="/" onClick={props.logout} className="after-authlink">
           Log Out

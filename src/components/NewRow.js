@@ -37,6 +37,10 @@ const Row = (props) => {
       autoplay: 1,
     },
   };
+
+  const clearTrailer = () => {
+    setTrailerUrl("");
+  };
   const playTrailer = (movie) => {
     if (trailerUrl) {
       setTrailerUrl("");
@@ -56,19 +60,21 @@ const Row = (props) => {
   return (
     <div className="category-row">
       <h1 className="category-name">{title}</h1>
-      {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
+
       <div className="movies-list-row">
         {movies.map((movie) => (
           <img
             className="movie"
             onClick={() => playTrailer(movie)}
-            // onMouseLeave={() => clearTrailer()}
+            // onMouseEnter={() => playTrailer(movie)}
+            // onMouseLeave={clearTrailer}
             key={movie.id}
             src={`${baseUrl}${movie.backdrop_path}`}
             alt=""
           />
         ))}
       </div>
+      {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
     </div>
   );
 };

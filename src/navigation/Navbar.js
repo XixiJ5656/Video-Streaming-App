@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import BeforeAuth from "./BeforeAuth";
 import AfterAuth from "./AfterAuth";
+import logo from "../logo.svg";
 
 const Navbar = (props) => {
   const [navBackground, setNavBackground] = useState(false);
@@ -27,7 +28,7 @@ const Navbar = (props) => {
       }}
     >
       <Link to={props.auth.uid ? "/homepage" : "/"} className="logo">
-        LOGO
+        <img src={logo} height="30vmin" alt="logo" />
       </Link>
       {Navlinks}
     </nav>

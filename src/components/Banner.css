@@ -1,0 +1,62 @@
+.overlay {
+  padding-top: 150px;
+  min-height: 50vh;
+  max-width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+.banner-description {
+  padding: 30px;
+  display: flex;
+  height: 30vh;
+  max-width: 35vw;
+  flex-direction: column;
+  margin: auto;
+}
+
+.top-section {
+  box-shadow: 12px 29px 81px 10px rgba(0, 0, 0, 0.75);
+}
+.show-title {
+  color: white;
+  font-size: 30pt;
+  font-weight: 700;
+  margin: auto;
+}
+.show-description {
+  color: white;
+  font-size: 10pt;
+}
+
+.banner-button {
+  margin-top: -100px;
+  width: 20vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.banner-play-button {
+  border: none;
+  font-size: 10pt;
+}
+.banner-show-details {
+  border: solid white;
+  font-size: 10pt;
+}
+.banner-play-button:hover {
+  border: none;
+  background-color: green;
+  color: white;
+}
+.banner-show-details:hover {
+  background-color: white;
+  color: black;
+}
+
+.fade-bottom {
+  height: 7.4 rem;
+  background-image: linear-gradient(
+    (180deg, trasparent, rgba(37, 37, 0, 0.6)),
+    #111
+  );
+}
