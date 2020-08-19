@@ -20,7 +20,7 @@ const AfterAuth = (props) => {
         </NavLink>
       </div>
       <div className="auth-nav">
-        <NavLink to="/accountpage" className="after-authlink">
+        <NavLink to="/accountpage" className="after-authlink-user">
           XJ
         </NavLink>
         <NavLink to="/" onClick={props.logout} className="after-authlink">

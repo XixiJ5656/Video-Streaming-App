@@ -33,7 +33,7 @@ const Row = (props) => {
     } else {
       movieTrailer(movie?.title || movie?.name || movie?.origianl_title || "")
         .then((url) => {
-          const urlParams = new URLSearchParams(new URL(url).search); /// need more explaination
+          const urlParams = new URLSearchParams(new URL(url).search); /// URLSearchParams
           setTrailerUrl(urlParams.get("v"));
         })
         .catch((error) => {
@@ -49,9 +49,9 @@ const Row = (props) => {
       <div className="movies-list-row">
         {movies.map((movie) => (
           <img
+            key={movie.id}
             className="movie"
             onClick={() => playTrailer(movie)}
-            key={movie.id}
             src={`${baseUrl}${movie.backdrop_path}`}
             alt=""
           />

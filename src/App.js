@@ -8,6 +8,7 @@ import SignupForm from "./pages/SignupForm";
 import HomePage from "./pages/HomePage";
 import MovieSection from "./pages/MovieSection";
 import TvshowSection from "./pages/TvshowSection";
+import Showdetails from "./pages/Showdetails";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/homepage" component={HomePage} />
           <Route path="/movies" component={MovieSection} />
           <Route path="/tvshows" component={TvshowSection} />
+          <Route path="/detailspage" component={Showdetails} />
           <Route exact path="/" component={LandingPage} />
         </Switch>
       </div>

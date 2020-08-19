@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-
 import axios from "axios";
 import "./Banner.css";
-
+import YouTube from "react-youtube";
+import movieTrailer from "movie-trailer";
 import { mixedApi } from "../Apilists";
 
 const TopBanner = () => {
   const [movie, setMovie] = useState({});
+  const [trailerUrl, setTrailerUrl] = useState("");
   useEffect(() => {
     axios
       .get(mixedApi.netflix)
@@ -14,14 +15,36 @@ const TopBanner = () => {
         const randomIndex = Math.floor(
           Math.random() * response.data.results.length
         );
-        console.log(response.data.results[randomIndex]);
         setMovie(response.data.results[randomIndex]);
       })
       .catch((error) => {
         return error;
       });
   }, []);
-  console.log(movie);
+
+  const opts = {
+    height: "390",
+    width: "100%",
+    playerVars: {
+      autoplay: 1,
+    },
+  };
+
+  const playTrailer = () => {
+    if (trailerUrl) {
+      setTrailerUrl("");
+    } else {
+      movieTrailer(movie?.title || movie?.name || movie?.origianl_title || "")
+        .then((url) => {
+          const urlParams = new URLSearchParams(new URL(url).search); /// URLSearchParams
+          setTrailerUrl(urlParams.get("v"));
+        })
+        .catch((error) => {
+          return error;
+        });
+    }
+  };
+
   return (
     <div
       className="top-section"
@@ -42,10 +65,14 @@ const TopBanner = () => {
           <p className="show-description">{movie.overview && movie.overview}</p>
         </div>
         <div className="banner-button">
-          <button className="banner-play-button"> ► play</button>
+          <button className="banner-play-button" onClick={playTrailer}>
+            {" "}
+            ► play
+          </button>
           <button className="banner-show-details">details</button>
         </div>
       </div>
+      {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
     </div>
   );
 };

@@ -10,8 +10,8 @@
   width: 100vw;
   height: 90vh;
   text-align: center;
-  background: linear-gradient(120deg, #016111, #5c064e, #211d5a, #5c3e02);
-  opacity: 95%;
+  background: linear-gradient(120deg, #016111, #4e0a43, #211d5a, #5c3e02);
+  opacity: 98%;
   background-size: 1000% 1000%;
   animation: rainbow 30s linear infinite;
 }
@@ -32,7 +32,7 @@
   height: 50%;
   margin: auto;
   position: relative;
-  padding-top: 200px;
+  padding-top: 35vh;
 }
 .center-piece h4 {
   margin-bottom: 40px;
@@ -54,15 +54,35 @@
   border-radius: 5px;
 }
 
+.free-trial:hover {
+  color: white;
+  font-weight: 700;
+  background-color: rgb(36, 101, 158);
+  padding: 0.7em 2em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 .center-piece h6 {
   padding-top: 30px;
   color: lightgray;
   font-size: 8pt;
 }
-
-.hulu-picture {
-  height: 100vh;
+.join-in-plan {
+  height: 90vh;
   width: 100vw;
   background-size: cover;
-  background-image: url("https://www.hulu.com/static/hitch/s3/2020-07/Desktop-1600_Content-Grid%20%281%29.jpg?FgLCrmk7GKMLgGs0JJj2h1.qZDhBg8d5");
+
+  background-color: rgb(11, 25, 39);
+}
+
+.bottom-picture {
+  height: 90vh;
+  width: 100vw;
+  margin: auto;
+  opacity: 30%;
+  padding-top: 5vh;
+  background-size: cover;
+  overflow: hidden;
+  background-image: url("https://cdn.collider.com/wp-content/uploads/2010/06/inception_movie_poster_banner_03.jpg");
 }

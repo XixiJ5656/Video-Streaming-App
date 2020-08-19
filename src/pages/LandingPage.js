@@ -24,15 +24,15 @@ const LandingPage = (props) => {
             <h6>Free trial for new & eligible returning subscribers only.</h6>
           </div>
         </div>
-        <div className="join-in-plan"></div>
-        <div className="hulu-picture"></div>
+        <div className="join-in-plan">
+          <div className="bottom-picture"></div>
+        </div>
       </section>
     );
   }
 };
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {
     auth: state.firebase.auth,
   };

@@ -83,13 +83,14 @@ const SignupForm = (props) => {
               >
                 Sign Up
               </button>
-              {/* <div>
-              {props.authError ? (
-                <p>
-                  Sign up failed, please double check your imput before submit.
-                </p>
-              ) : null}
-            </div> */}
+              <div>
+                {props.authError ? (
+                  <p>
+                    Sign up failed, please double check your imput before
+                    submit.
+                  </p>
+                ) : null}
+              </div>
             </div>
           </form>
         </div>

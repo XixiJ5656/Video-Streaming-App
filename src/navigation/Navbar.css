@@ -21,7 +21,7 @@
   justify-content: space-between;
 }
 .content-links {
-  font-size: 9pt;
+  font-size: 10pt;
 
   color: white;
   font-weight: 500;
@@ -33,17 +33,25 @@
   justify-content: space-around;
 }
 .before-authlink {
-  font-size: 9pt;
+  font-size: 12pt;
   margin-right: 20px;
   color: white;
   font-weight: 700;
   text-decoration: none;
 }
 .after-authlink {
-  display: flex;
-  justify-content: space-around;
-  font-size: 8pt;
+  font-size: 11pt;
   color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.after-authlink-user {
+  display: block;
+  font-size: 12pt;
+  color: white;
+  background-color: green;
+  border-radius: 50%;
   font-weight: 700;
   text-decoration: none;
 }
