@@ -2,12 +2,12 @@
 
 ## Important
 
-This APP is deployed on Firebase,but the layout has changed after deployed.This issue has not been solved yet. Pease check the app through locoal hosting. 
+This APP is deployed on Firebase.However, the layout has been changed after deployment.This issue has not been solved yet. Please check the app via localhost:3000. 
 
 The firebase HOSTING URL is :https://video-streaming-app-9103c.web.app
 
 
-Tools/Libraries used :
+Tools/libraries used :
 axios
 redux
 firebase
