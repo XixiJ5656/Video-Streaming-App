@@ -1,19 +1,25 @@
-.background-picture-landing {
+/* .background-picture-landing {
   position: absolute;
+  z-index: -99;
   width: 100vw;
   height: 90vh;
   background-size: cover;
   background-image: url("http://colourmenina.ca/wordpress/wp-content/uploads/2018/03/toptvshows.png");
-}
+} */
 .landing-page-top {
-  position: relative;
   width: 100vw;
   height: 90vh;
   text-align: center;
-  background: linear-gradient(120deg, #014e0e, #533801, #08024e, #640155);
-  opacity: 98%;
+  background: linear-gradient(
+    120deg,
+    #014e0e,
+    #795102,
+    #250277,
+    #3b013d,
+    #801a01
+  );
   background-size: 1000% 1000%;
-  animation: rainbow 30s linear infinite;
+  animation: rainbow 80s linear infinite;
 }
 
 @keyframes rainbow {
@@ -37,6 +43,7 @@
 .center-piece h4 {
   margin-bottom: 40px;
   color: aliceblue;
+  z-index: 15;
 }
 .app-name {
   font-size: 55pt;
@@ -72,7 +79,6 @@
   height: 90vh;
   width: 100vw;
   background-size: cover;
-
   background-color: rgb(35, 33, 63);
 }
 
@@ -80,7 +86,6 @@
   height: 90vh;
   width: 100vw;
   margin: auto;
-  opacity: 50%;
   padding-top: 5vh;
   background-size: cover;
   overflow: hidden;

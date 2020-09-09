@@ -11,6 +11,7 @@ import TvshowSection from "./pages/TvshowSection";
 import Showdetails from "./pages/Showdetails";
 
 const App = () => {
+  console.log("version updated");
   return (
     <Router>
       <div className="App">

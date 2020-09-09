@@ -1,16 +1,15 @@
-.background-picture-login {
+/* .background-picture-login {
   position: absolute;
+  z-index: -99;
   width: 100vw;
   height: 100vh;
   background-size: cover;
   background-image: url("https://ideasmesh.com/wp-content/uploads/2019/09/Top-7-best-TV-shows-of-all-time.jpg");
-}
+} */
 .login-container {
-  position: relative;
   height: 100vh;
   width: 100vw;
-  opacity: 95%;
-  background-image: linear-gradient(to top, rgb(11, 68, 60), rgb(87, 87, 11));
+  background-image: linear-gradient(to right, rgb(1, 48, 87), rgb(56, 1, 63));
   color: white;
 }
 .login-form {

@@ -1,14 +1,14 @@
-.background-picture-singup {
+/* .background-picture-singup {
   position: absolute;
+  z-index: -99;
   width: 100vw;
   height: 100vh;
   background-size: cover;
   background-image: url("https://miro.medium.com/max/1508/1*dBJMknulIZSAC36tTmanVA.jpeg");
-}
+} */
 .signup-container {
   height: 100vh;
   width: 100vw;
-  opacity: 95%;
   background-image: linear-gradient(to top, rgb(27, 41, 82), rgb(94, 67, 27));
   color: white;
 }

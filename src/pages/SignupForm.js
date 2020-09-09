@@ -32,7 +32,7 @@ const SignupForm = (props) => {
   } else {
     return (
       <div>
-        <div className="background-picture-singup"></div>
+        {/* <div className="background-picture-singup"></div> */}
         <div className="signup-container">
           <form className="signup-form" onSubmit={handleSubmit}>
             <h5>SIGN UP</h5>

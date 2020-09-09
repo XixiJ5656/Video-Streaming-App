@@ -9,7 +9,7 @@ const LandingPage = (props) => {
   } else {
     return (
       <section className="landing-page">
-        <div className="background-picture-landing"></div>
+        {/* <div className="background-picture-landing"></div> */}
         <div className="landing-page-top">
           <div className="center-piece">
             <h4>

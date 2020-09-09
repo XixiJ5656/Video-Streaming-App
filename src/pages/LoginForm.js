@@ -29,7 +29,7 @@ const LoginForm = (props) => {
   } else {
     return (
       <div>
-        <div className="background-picture-login"></div>
+        {/* <div className="background-picture-login"></div> */}
         <div className="login-container">
           <form className="login-form" onSubmit={handleSubmit}>
             <h5>LOG IN </h5>
