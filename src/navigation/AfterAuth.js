@@ -5,7 +5,6 @@ import { connect } from "react-redux";
 import LogoutActionsCreator from "../actions/LogoutActions";
 
 const AfterAuth = (props) => {
-  console.log(props);
   return (
     <div className="navbar-links">
       <div className="content-nav">

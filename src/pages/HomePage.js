@@ -15,15 +15,14 @@ const HomePage = (props) => {
         <TopBanner />
         <ContentRow title="Trending Movies" apiUrl={mixedApi.trendingMovie} />
         <ContentRow title="Trending TV Shows" apiUrl={mixedApi.trendingTv} />
-        <ContentRow title="Popular" apiUrl={mixedApi.netflix} />
         <ContentRow title="TV On Air" apiUrl={mixedApi.tvOnAir} />
+        <ContentRow title="Popular" apiUrl={mixedApi.netflix} />
       </div>
     );
   }
 };
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {
     auth: state.firebase.auth,
   };
