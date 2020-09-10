@@ -1,7 +1,6 @@
 ## Important
 
-This APP is deployed on Firebase. However, the layout has been changed after deployment.This issue has not been solved yet. Please check the app via localhost:3000.
-
+This APP is deployed on Firebase. 
 The firebase HOSTING URL is :https://video-streaming-app-9103c.web.app
 
 Tools/libraries used :
